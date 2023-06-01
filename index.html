@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="ua">
+<head>
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+<div class="box">
+	<div class="add-product">
+		<section class="find">
+			<input type="text" class="to-add" placeholder="Назва товару" readonly />
+			<button type="button" class="add" data-tooltip="Додати товар">Додати</button>
+		</section>
+        <hr/>
+		<section class="line">
+			<span class="product-item-to-add added">Помідори</span>
+			<div class="amount-number">
+				<span class="amount-to-add" id="just-number">2</span>
+			</div>
+			<div class="button">
+				<button type="button" class="add-to-list" id="not-bought" data-tooltip="Прибрати з кошика">Не куплено</button>
+			</div>
+		</section>
+        <hr/>
+		<section class="line">
+			<span class="product-item-to-add">Печиво</span>
+			<div class="amount-number">
+				<button type="button" class="minus" data-tooltip="Зменшити">−</button>
+				<span class="amount-to-add">2</span>
+				<button type="button" class="plus" data-tooltip="Збільшити">+</button>
+			</div>
+			<div class="button">
+				<button type="button" class="add-to-list" data-tooltip="Придбати">Куплено</button>
+				<button type="button" class="delete" data-tooltip="Видалити">×</button>
+			</div>
+		</section>
+        <hr/>
+		<section class="line">
+			<input type="text" class="rename" placeholder="Сир" readonly/>
+			<div class="amount-number">
+				<button type="button" class="minus disabled" data-tooltip="Зменшити">−</button>
+				<span class="amount-to-add">1</span>
+				<button type="button" class="plus" data-tooltip="Збільшити">+</button>
+			</div>
+			<div class="button">
+				<button type="button" class="add-to-list" data-tooltip="Придбати">Куплено</button>
+				<button type="button" class="delete" data-tooltip="Видалити">×</button>
+			</div>
+		</section>
+	</div>
+	<div class="buy-list">
+		<span class="title">Залишилося</span>
+        <hr/>
+		<section class="list">
+			<span class="product-item">Печиво
+				<span class="amount">2</span>
+			</span>
+			<span class="product-item">Сир
+				<span class="amount">1</span>
+			</span>
+		</section>
+        <hr/>
+		<span class="title">Куплено</span>
+        <hr/>
+		<section class="list">
+			<span class="product-item added">Помідори
+				<span class="amount">2</span>
+			</span>
+		</section>
+	</div>
+</div>
+<div class="badge">
+	<span class="text">Buy List<br/><br/></span>
+	<span class="hover-text">Created by:</span><br/>
+	<span class="hover-text1">Cherednichok Kateryna</span>
+</div>
+
 </body>
 </html>
