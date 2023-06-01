@@ -226,18 +226,18 @@ button::after {
 	background: rgb(155, 25, 200);
 	border-radius: 8px ;
 	color: #FFF;
-	content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+	content: attr(data-tooltip);
 	margin-top: -24px;
-	opacity: 0; /* Наш элемент прозрачен... */
+	opacity: 0;
 	padding: 3px 7px;
 	position: absolute;
-	visibility: hidden; /* ...и скрыт. */
+	visibility: hidden;
 
-	transition: all 0.8s ease-in-out; /* Добавить плавности по вкусу */
+	transition: all 0.8s ease-in-out;
 }
 
 button:hover::after {
-	opacity: 1; /* Показываем его */
+	opacity: 1;
 	visibility: visible;
 }
 
